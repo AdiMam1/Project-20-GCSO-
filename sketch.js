@@ -15,6 +15,10 @@ function setup() {
   wall = createSprite(1500,200,60,height/2);
   wall.shapeColor = color(80,80,80);
 
+}
+
+function draw() {
+  background(255,255,255);
   if(wall.x - car.x < (car.width+ wall.width)/2)
   {
     car.velocityX = 0;
@@ -36,12 +40,6 @@ function setup() {
     }
 
 
-  } 
-  
-  
-}
-
-function draw() {
-  background(255,255,255);  
+  }   
   drawSprites();
 }
